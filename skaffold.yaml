@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta10
+kind: Config
+metadata:
+  name: python-helloworld
+build:
+  artifacts:
+  - image: node-1:31320/hello-python
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - app-deployment.yaml
