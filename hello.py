@@ -1,5 +1,7 @@
 import os
 import flask
+import pymysql
+pymysql.install_as_MySQLdb()
 import MySQLdb
 
 application = flask.Flask(__name__)
