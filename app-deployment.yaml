@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: hello-python:latest
+          image: hello-python
           ports:
             - containerPort: 3000
           env:
