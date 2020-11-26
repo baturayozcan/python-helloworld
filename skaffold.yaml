@@ -7,8 +7,9 @@ build:
   - image: hello-python
     docker:
       dockerfile: Dockerfile
+  local:
+    push: false
 deploy:
-  kubeContext: minikube
   kubectl:
     manifests:
     - app-deployment.yaml
