@@ -12,4 +12,4 @@ build:
 deploy:
   kubectl:
     manifests:
-    - app-deployment.yaml
+    - /vagrant/manifests/app-deployment.yaml
